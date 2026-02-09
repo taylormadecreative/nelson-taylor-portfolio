@@ -39,6 +39,8 @@ next-env.d.ts
 /flyer/
 /logo/
 
-# screenshots
-*.png
-!public/images/*.png
+# screenshots (root level only)
+/*.png
+
+# source portfolio assets (already copied to public)
+Nelson Taylor portfolio site/

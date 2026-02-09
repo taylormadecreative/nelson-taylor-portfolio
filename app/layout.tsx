@@ -1,42 +1,24 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Outfit } from "next/font/google";
+"use client";
+
+import { Syne, DM_Sans } from "next/font/google";
+import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "@/styles/globals.css";
+import { AnimatePresence } from "framer-motion";
 
-const playfair = Playfair_Display({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-syne",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const outfit = Outfit({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-dm-sans",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
 });
-
-export const metadata: Metadata = {
-  title: {
-    default: "Reek Rozay Entertainment | Dallas' Premier Haitian Kompa Events & Dance",
-    template: "%s | Reek Rozay Entertainment",
-  },
-  description:
-    "Reek Rozay Entertainment brings Dallas the best in Haitian Kompa events, dance workshops, and live entertainment. Experience the culture.",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: "Reek Rozay Entertainment",
-    title: "Reek Rozay Entertainment | Dallas' Premier Haitian Kompa Events & Dance",
-    description:
-      "Reek Rozay Entertainment brings Dallas the best in Haitian Kompa events, dance workshops, and live entertainment.",
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
-};
 
 export default function RootLayout({
   children,
@@ -44,16 +26,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <head>
-        {/* META PIXEL: Install Facebook/Meta Pixel script here */}
+        <title>Nelson Taylor | Creative Director & Visual Storyteller</title>
+        <meta
+          name="description"
+          content="Creative Director with 10+ years crafting visual experiences across photography, video, design, and digital marketing. Let's make something unforgettable."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/nelson-taylor-portfolio/favicon.ico" />
       </head>
-      <body className="bg-brand-black text-brand-cream antialiased">
-        {/* Noise texture overlay for depth */}
-        <div className="noise-overlay" />
-
+      <body className="bg-bg text-cream antialiased">
+        <div className="grain-overlay" />
         <Navbar />
-        <main>{children}</main>
+        <AnimatePresence mode="wait">
+          <main>{children}</main>
+        </AnimatePresence>
         <Footer />
       </body>
     </html>
