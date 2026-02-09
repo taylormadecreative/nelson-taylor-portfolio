@@ -17,37 +17,37 @@ const featuredWork = [
   {
     title: "MYX Foundation",
     category: "Product Photography",
-    image: "/images/product/myx-hero.jpg",
+    image: "/nelson-taylor-portfolio/images/product/myx-hero.jpg",
     href: "/photography",
   },
   {
     title: "Takis Fuego",
     category: "Brand Campaign",
-    image: "/images/product/takis-fuego.jpg",
+    image: "/nelson-taylor-portfolio/images/product/takis-fuego.jpg",
     href: "/photography",
   },
   {
     title: "TONI&GUY Editorial",
     category: "Fashion Photography",
-    image: "/images/hero/toni-guy-editorial.jpg",
+    image: "/nelson-taylor-portfolio/images/hero/toni-guy-editorial.jpg",
     href: "/photography",
   },
   {
     title: "Jordan x Foot Locker",
     category: "Product & Branding",
-    image: "/images/product/jordan-iv.jpg",
+    image: "/nelson-taylor-portfolio/images/product/jordan-iv.jpg",
     href: "/photography",
   },
   {
     title: "Konjo Beauty",
     category: "Product Photography",
-    image: "/images/product/konjo-1.jpg",
+    image: "/nelson-taylor-portfolio/images/product/konjo-1.jpg",
     href: "/photography",
   },
   {
     title: "AI Fashion Editorial",
     category: "AI-Generated Content",
-    image: "/images/ai/vintage-car-editorial.png",
+    image: "/nelson-taylor-portfolio/images/ai/vintage-car-editorial.png",
     href: "/ai-content",
   },
 ];
@@ -339,7 +339,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/hero/beauty-sunglasses.jpg"
+                  src="/nelson-taylor-portfolio/images/hero/beauty-sunglasses.jpg"
                   alt="Nelson Taylor Creative Work"
                   fill
                   className="object-cover"
@@ -402,7 +402,7 @@ export default function Home() {
           <p className="font-display text-xs uppercase tracking-[0.3em] text-gold mb-8">
             Let&apos;s create something
           </p>
-          <h2 className="heading-xl mb-10 max-w-4xl mx-auto">
+          <h2 className="heading-xl mb-10 max-w-4xl mx-auto text-center">
             YOUR BRAND
             <br />
             <span className="text-gradient-gold">DESERVES BETTER</span>

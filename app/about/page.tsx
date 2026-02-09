@@ -103,7 +103,7 @@ export default function AboutPage() {
           <FadeUp>
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
               <Image
-                src="/images/hero/beauty-sunglasses.jpg"
+                src="/nelson-taylor-portfolio/images/hero/beauty-sunglasses.jpg"
                 alt="Nelson Taylor"
                 fill
                 className="object-cover"

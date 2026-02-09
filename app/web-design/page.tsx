@@ -16,7 +16,7 @@ const websites = [
     description:
       "Full branding and web design for recording artist JaQuandice. Custom layout, music player integration, and visual identity that captures the artist's creative vision.",
     url: "https://jaquandice.com",
-    image: "/images/web-projects/jaquandice-cover.png",
+    image: "/nelson-taylor-portfolio/images/web-projects/jaquandice-cover.png",
     tags: ["Web Design", "Branding", "UI/UX"],
   },
   {
@@ -25,7 +25,7 @@ const websites = [
     description:
       "Premium e-commerce experience for a luxury fashion brand. Clean, elevated design with sophisticated product showcasing and seamless checkout flow.",
     url: "https://taylormadecreative.github.io/crowne-luxx-collection/",
-    image: "/images/product/konjo-1.jpg",
+    image: "/nelson-taylor-portfolio/images/product/konjo-1.jpg",
     tags: ["E-Commerce", "UI/UX", "Branding"],
   },
   {
@@ -34,7 +34,7 @@ const websites = [
     description:
       "Dynamic website for a live entertainment band featuring event booking, media gallery, and promotional content that brings the energy of their performances online.",
     url: "https://management3297.wixsite.com/the-celebration-band",
-    image: "/images/events/event-1.jpg",
+    image: "/nelson-taylor-portfolio/images/events/event-1.jpg",
     tags: ["Web Design", "Booking System", "Media"],
   },
   {
@@ -43,7 +43,7 @@ const websites = [
     description:
       "UI/UX design for an AI-driven mood tracking application. Intuitive interface design, data visualization, and calming visual language for mental wellness.",
     url: "https://taylormadecreative.github.io/moodai-website/",
-    image: "/images/ai/ai-beauty-1.png",
+    image: "/nelson-taylor-portfolio/images/ai/ai-beauty-1.png",
     tags: ["UI/UX", "App Design", "AI"],
   },
   {
@@ -52,7 +52,7 @@ const websites = [
     description:
       "Professional website for a roofing company that builds trust through clean design, clear service presentation, and strong calls-to-action that convert visitors to customers.",
     url: "https://taylormadecreative.github.io/thepeoplesroofer/",
-    image: "/images/branding/static-ad-1.jpg",
+    image: "/nelson-taylor-portfolio/images/branding/static-ad-1.jpg",
     tags: ["Web Design", "Local Business", "Lead Gen"],
   },
 ];
