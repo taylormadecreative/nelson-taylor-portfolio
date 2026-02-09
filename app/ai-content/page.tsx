@@ -122,58 +122,8 @@ export default function AIContentPage() {
         </motion.p>
       </section>
 
-      {/* Manifesto */}
-      <section className="section-padding pb-20">
-        <FadeUp>
-          <div className="glass-card p-8 md:p-12 max-w-3xl">
-            <p className="font-display text-xs uppercase tracking-[0.2em] text-gold mb-4">
-              My Approach
-            </p>
-            <p className="font-body text-lg text-white/50 leading-relaxed">
-              AI is a tool, not a replacement for creative vision. I bring 10+
-              years of art direction experience to every prompt — understanding
-              lighting, composition, color theory, and brand aesthetics to
-              produce AI content that&apos;s indistinguishable from professional
-              shoots. The future of content creation is here, and it still
-              needs a creative director.
-            </p>
-          </div>
-        </FadeUp>
-      </section>
-
-      {/* Gallery */}
-      <section className="section-padding pb-32">
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {aiWork.map((work) => (
-            <StaggerItem key={work.src}>
-              <div className="group">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-lg mb-4">
-                  <Image
-                    src={work.src}
-                    alt={work.alt}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                <span className="font-display text-xs uppercase tracking-[0.15em] text-gold/60 block mb-1">
-                  {work.category}
-                </span>
-                <h3 className="font-display font-bold text-lg text-cream mb-2 group-hover:text-gold transition-colors duration-300">
-                  {work.alt}
-                </h3>
-                <p className="font-body text-sm text-white/30 leading-relaxed">
-                  {work.description}
-                </p>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
-      </section>
-
-      {/* AI Animated Ads Section */}
-      <section className="border-t border-white/[0.06] section-padding py-28">
+      {/* AI Animated Ads Section - FIRST */}
+      <section className="section-padding pb-28">
         <FadeUp>
           <div className="flex items-center gap-4 mb-16">
             <div className="gold-line" />
@@ -251,6 +201,64 @@ export default function AIContentPage() {
         </StaggerContainer>
       </section>
 
+      {/* Manifesto */}
+      <section className="border-t border-white/[0.06] section-padding py-20">
+        <FadeUp>
+          <div className="glass-card p-8 md:p-12 max-w-3xl">
+            <p className="font-display text-xs uppercase tracking-[0.2em] text-gold mb-4">
+              My Approach
+            </p>
+            <p className="font-body text-lg text-white/50 leading-relaxed">
+              AI is a tool, not a replacement for creative vision. I bring 10+
+              years of art direction experience to every prompt — understanding
+              lighting, composition, color theory, and brand aesthetics to
+              produce AI content that&apos;s indistinguishable from professional
+              shoots. The future of content creation is here, and it still
+              needs a creative director.
+            </p>
+          </div>
+        </FadeUp>
+      </section>
+
+      {/* Gallery */}
+      <section className="section-padding pb-32">
+        <FadeUp>
+          <div className="flex items-center gap-4 mb-16">
+            <div className="gold-line" />
+            <span className="font-display text-xs uppercase tracking-[0.3em] text-gold">
+              AI-Generated Imagery
+            </span>
+          </div>
+        </FadeUp>
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {aiWork.map((work) => (
+            <StaggerItem key={work.src}>
+              <div className="group">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-lg mb-4">
+                  <Image
+                    src={work.src}
+                    alt={work.alt}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                <span className="font-display text-xs uppercase tracking-[0.15em] text-gold/60 block mb-1">
+                  {work.category}
+                </span>
+                <h3 className="font-display font-bold text-lg text-cream mb-2 group-hover:text-gold transition-colors duration-300">
+                  {work.alt}
+                </h3>
+                <p className="font-body text-sm text-white/30 leading-relaxed">
+                  {work.description}
+                </p>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+      </section>
+
       {/* Tools */}
       <section className="border-t border-white/[0.06] section-padding py-20">
         <FadeUp>
@@ -267,8 +275,12 @@ export default function AIContentPage() {
             "DALL-E",
             "Stable Diffusion",
             "Runway ML",
+            "Higgsfield",
             "Adobe Firefly",
             "Photoshop AI",
+            "Claude",
+            "ChatGPT",
+            "Gemini",
           ].map((tool) => (
             <StaggerItem key={tool}>
               <span className="px-6 py-3 border border-white/[0.08] font-display text-sm text-white/40 hover:text-gold hover:border-gold/30 transition-all duration-300 cursor-default">

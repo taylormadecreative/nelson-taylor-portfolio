@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import {
   FadeUp,
   SlideRight,
-  StaggerContainer,
-  StaggerItem,
 } from "@/components/AnimatedSection";
 
 const videoProjects = [
@@ -74,28 +72,6 @@ const videoProjects = [
   },
 ];
 
-const motionWork = [
-  {
-    title: "59 Shades Ad",
-    description: "Animated social media ad with dynamic motion graphics.",
-    type: "Motion Graphics",
-  },
-  {
-    title: "ClipNGo Campaigns",
-    description: "Series of animated product ads for mobile app promotion.",
-    type: "Product Animation",
-  },
-  {
-    title: "Halloween Social Post",
-    description: "AI-generated animated content for seasonal social campaign.",
-    type: "AI + Motion",
-  },
-  {
-    title: "Winter Certified Ad",
-    description: "Seasonal brand campaign with dynamic text animation and transitions.",
-    type: "Brand Animation",
-  },
-];
 
 export default function VideoPage() {
   return (
@@ -185,67 +161,6 @@ export default function VideoPage() {
             </div>
           ))}
         </div>
-      </section>
-
-      {/* Motion Graphics Section */}
-      <section className="border-t border-white/[0.06] section-padding py-28">
-        <FadeUp>
-          <div className="flex items-center gap-4 mb-16">
-            <div className="gold-line" />
-            <span className="font-display text-xs uppercase tracking-[0.3em] text-gold">
-              Motion Graphics & Animation
-            </span>
-          </div>
-          <h2 className="heading-lg mb-16">
-            Animated <span className="text-gradient-gold">Content</span>
-          </h2>
-        </FadeUp>
-
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {motionWork.map((work) => (
-            <StaggerItem key={work.title}>
-              <div className="glass-card p-8 group hover:border-gold/20 transition-all duration-500">
-                <span className="font-display text-xs uppercase tracking-[0.15em] text-gold/60 mb-4 block">
-                  {work.type}
-                </span>
-                <h3 className="font-display font-bold text-xl text-cream mb-3 group-hover:text-gold transition-colors duration-300">
-                  {work.title}
-                </h3>
-                <p className="font-body text-sm text-white/30 leading-relaxed">
-                  {work.description}
-                </p>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
-      </section>
-
-      {/* Skills */}
-      <section className="border-t border-white/[0.06] section-padding py-20">
-        <FadeUp>
-          <div className="flex items-center gap-4 mb-12">
-            <div className="gold-line" />
-            <span className="font-display text-xs uppercase tracking-[0.3em] text-gold">
-              Tools & Software
-            </span>
-          </div>
-        </FadeUp>
-        <StaggerContainer className="flex flex-wrap gap-4">
-          {[
-            "DaVinci Resolve",
-            "After Effects",
-            "Premiere Pro",
-            "Cinema 4D",
-            "Figma",
-            "Photoshop",
-          ].map((tool) => (
-            <StaggerItem key={tool}>
-              <span className="px-6 py-3 border border-white/[0.08] font-display text-sm text-white/40 hover:text-gold hover:border-gold/30 transition-all duration-300 cursor-default">
-                {tool}
-              </span>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
       </section>
 
       {/* CTA */}

@@ -58,8 +58,8 @@ const timeline = [
 const skills = [
   { category: "Design", items: ["Figma", "Photoshop", "Illustrator", "InDesign", "SketchUp"] },
   { category: "Video", items: ["DaVinci Resolve", "After Effects", "Premiere Pro"] },
-  { category: "Web", items: ["HTML/CSS", "WordPress", "Shopify", "UI/UX Design"] },
-  { category: "AI", items: ["Midjourney", "DALL-E", "Stable Diffusion", "Runway ML"] },
+  { category: "Web", items: ["HTML/CSS", "WordPress", "Shopify", "Squarespace", "Wix", "UI/UX Design"] },
+  { category: "AI", items: ["Midjourney", "DALL-E", "Stable Diffusion", "Runway ML", "Higgsfield", "Claude", "ChatGPT", "Gemini"] },
 ];
 
 export default function AboutPage() {
@@ -103,7 +103,7 @@ export default function AboutPage() {
           <FadeUp>
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
               <Image
-                src="/nelson-taylor-portfolio/images/hero/beauty-sunglasses.jpg"
+                src="/nelson-taylor-portfolio/images/hero/nelson-headshot.png"
                 alt="Nelson Taylor"
                 fill
                 className="object-cover"
@@ -304,7 +304,7 @@ export default function AboutPage() {
                     Location
                   </p>
                   <p className="font-body text-lg text-cream">
-                    Arlington, TX
+                    Dallas-Ft. Worth, TX
                   </p>
                 </div>
                 <div>

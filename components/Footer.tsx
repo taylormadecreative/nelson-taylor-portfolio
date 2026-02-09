@@ -121,7 +121,7 @@ export default function Footer() {
             reserved.
           </p>
           <p className="font-body text-xs text-white/20">
-            Arlington, TX
+            Dallas-Ft. Worth, TX
           </p>
         </div>
       </div>
