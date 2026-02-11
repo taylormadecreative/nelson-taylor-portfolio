@@ -339,8 +339,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
-                  src="/nelson-taylor-portfolio/images/hero/beauty-sunglasses.jpg"
-                  alt="Nelson Taylor Creative Work"
+                  src="/nelson-taylor-portfolio/images/hero/nelson-headshot.png"
+                  alt="Nelson Taylor"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

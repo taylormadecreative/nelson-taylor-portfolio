@@ -114,7 +114,7 @@ export default function WebDesignPage() {
             >
               <FadeUp>
                 <div className={i % 2 === 1 ? "lg:[direction:ltr]" : ""}>
-                  <div className="relative aspect-[16/10] overflow-hidden rounded-lg group">
+                  <div className="relative aspect-[40/21] overflow-hidden rounded-lg group">
                     <Image
                       src={project.image}
                       alt={project.title}
