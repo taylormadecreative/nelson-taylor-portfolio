@@ -68,7 +68,6 @@ export default function Home() {
   });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
   return (
     <>
@@ -79,7 +78,7 @@ export default function Home() {
       >
         {/* Background Video with Parallax */}
         <motion.div
-          style={{ y: heroY, scale: heroScale }}
+          style={{ y: heroY, willChange: "transform" }}
           className="absolute inset-0"
         >
           <div className="absolute inset-0 overflow-hidden">
@@ -87,8 +86,9 @@ export default function Home() {
               src="https://www.youtube.com/embed/zhitPPJDJqA?autoplay=1&mute=1&loop=1&playlist=zhitPPJDJqA&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
               title="Nelson Taylor Film Reel"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] md:w-[200%] md:h-[200%] pointer-events-none"
-              style={{ border: "none" }}
+              style={{ border: "none", transform: "translateZ(0)" }}
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-bg/30" />
@@ -97,7 +97,7 @@ export default function Home() {
 
         {/* Hero Content */}
         <motion.div
-          style={{ opacity: heroOpacity }}
+          style={{ opacity: heroOpacity, willChange: "opacity" }}
           className="relative z-10 section-padding pb-20 md:pb-28 w-full"
         >
           <motion.div
@@ -175,6 +175,7 @@ export default function Home() {
         <motion.div
           animate={{ x: [0, -1000] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          style={{ willChange: "transform" }}
           className="flex items-center gap-8 whitespace-nowrap"
         >
           {[...disciplines, ...disciplines, ...disciplines, ...disciplines].map(

@@ -565,13 +565,12 @@ export default function PhotographyPage() {
     offset: ["start start", "end start"],
   });
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
 
   return (
     <>
       {/* ═══════════ CINEMATIC HERO ═══════════ */}
       <section ref={heroRef} className="relative h-[85vh] md:h-screen overflow-hidden flex items-end">
-        <motion.div style={{ scale: heroScale }} className="absolute inset-0">
+        <div className="absolute inset-0">
           <Image
             src={`${IMG}/hero/toni-guy-editorial.jpg`}
             alt="Photography by Nelson Taylor"
@@ -582,10 +581,10 @@ export default function PhotographyPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
           <div className="absolute inset-0 bg-gradient-to-r from-bg/60 via-transparent to-bg/30" />
-        </motion.div>
+        </div>
 
         <motion.div
-          style={{ opacity: heroOpacity }}
+          style={{ opacity: heroOpacity, willChange: "opacity" }}
           className="relative z-10 section-padding pb-16 md:pb-24 w-full"
         >
           <motion.div
