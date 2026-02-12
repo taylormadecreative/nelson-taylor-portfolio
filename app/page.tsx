@@ -402,10 +402,10 @@ export default function Home() {
           <p className="font-display text-xs uppercase tracking-[0.3em] text-gold mb-8">
             Let&apos;s create something
           </p>
-          <h2 className="heading-xl mb-10 max-w-4xl mx-auto text-center">
-            YOUR BRAND
-            <br />
-            <span className="text-gradient-gold">DESERVES BETTER</span>
+          <h2 className="font-display font-black text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-[0.9] mb-10 mx-auto text-center">
+            <span className="block">YOUR BRAND</span>
+            <span className="block text-gradient-gold">DESERVES</span>
+            <span className="block text-gradient-gold">BETTER</span>
           </h2>
           <a
             href="mailto:taylormademd@gmail.com"

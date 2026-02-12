@@ -47,7 +47,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="group inline-block"
           >
-            <span className="font-display font-black text-4xl md:text-6xl lg:text-7xl text-cream/20 group-hover:text-gold transition-colors duration-500 tracking-tight">
+            <span className="font-display font-black text-base sm:text-xl md:text-3xl lg:text-4xl text-cream/20 group-hover:text-gold transition-colors duration-500 tracking-tight break-all sm:break-normal">
               taylormademd@gmail.com
             </span>
           </motion.a>
