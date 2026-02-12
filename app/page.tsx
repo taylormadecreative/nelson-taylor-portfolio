@@ -17,13 +17,13 @@ const featuredWork = [
   {
     title: "MYX Foundation",
     category: "Product Photography",
-    image: "/nelson-taylor-portfolio/images/product/myx-hero.jpg",
+    image: "/nelson-taylor-portfolio/images/product/brands/myx/myx%201.jpg",
     href: "/photography",
   },
   {
     title: "Takis Fuego",
     category: "Brand Campaign",
-    image: "/nelson-taylor-portfolio/images/product/takis-fuego.jpg",
+    image: "/nelson-taylor-portfolio/images/product/brands/takis/takis%20graphic.jpg",
     href: "/photography",
   },
   {
@@ -35,13 +35,13 @@ const featuredWork = [
   {
     title: "Jordan x Foot Locker",
     category: "Product & Branding",
-    image: "/nelson-taylor-portfolio/images/product/jordan-iv.jpg",
+    image: "/nelson-taylor-portfolio/images/product/brands/jordan/jordanIV_1.jpg",
     href: "/photography",
   },
   {
     title: "Konjo Beauty",
     category: "Product Photography",
-    image: "/nelson-taylor-portfolio/images/product/konjo-1.jpg",
+    image: "/nelson-taylor-portfolio/images/product/brands/konjo/Konjo8937.jpg",
     href: "/photography",
   },
   {
