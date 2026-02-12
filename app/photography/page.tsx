@@ -5,7 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FadeUp } from "@/components/AnimatedSection";
 
-type Category = "All" | "Beauty" | "Fashion" | "Product" | "Hair" | "Events";
+type Category = "All" | "Beauty" | "Fashion" | "Product";
 
 interface PhotoItem {
   src: string;
@@ -15,48 +15,35 @@ interface PhotoItem {
 }
 
 const photos: PhotoItem[] = [
-  // Beauty — Curated top picks
-  { src: "/nelson-taylor-portfolio/images/beauty/areil-red-profile.jpg", alt: "Red Monochrome Portrait", category: ["Beauty"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/beauty/diameco-jewelry.jpg", alt: "Diameco Luxury Jewelry Campaign", category: ["Beauty"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/beauty/starface-campaign.jpg", alt: "StarFace Skincare Campaign", category: ["Beauty"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/beauty/medspa-closeup.jpg", alt: "Secret Med Spa — Beauty Close-up", category: ["Beauty"], aspect: "portrait" },
+  // Beauty — Black Girl Sunscreen, Diameco, It's a Secret Med Spa, Neutrogena, Pigment Makeup, StarFace
   { src: "/nelson-taylor-portfolio/images/beauty/bgs-campaign.jpg", alt: "Black Girl Sunscreen Campaign", category: ["Beauty"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/beauty/diameco-jewelry.jpg", alt: "Diameco Luxury Jewelry Campaign", category: ["Beauty"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/beauty/diameco-rooftop.jpg", alt: "Diameco Rooftop Editorial", category: ["Beauty"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/beauty/medspa-editorial.jpg", alt: "Secret Med Spa — Feather Editorial", category: ["Beauty"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/beauty/medspa-closeup.jpg", alt: "It's a Secret Med Spa — Close-up", category: ["Beauty"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/beauty/medspa-editorial.jpg", alt: "It's a Secret Med Spa — Editorial", category: ["Beauty"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/beauty/neutrogena-campaign.jpg", alt: "Neutrogena Hydro Boost Campaign", category: ["Beauty"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/beauty/pigment-makeup.png", alt: "Pigment Makeup Editorial", category: ["Beauty"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/beauty/starface-campaign.jpg", alt: "StarFace Skincare Campaign", category: ["Beauty"], aspect: "portrait" },
 
-  // Fashion — Curated top picks
-  { src: "/nelson-taylor-portfolio/images/fashion/dallas-pearl-closeup.jpg", alt: "Pearl Beauty Portrait", category: ["Fashion", "Beauty"], aspect: "portrait" },
+  // Fashion
+  { src: "/nelson-taylor-portfolio/images/fashion/dallas-pearl-closeup.jpg", alt: "Pearl Beauty Portrait", category: ["Fashion"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/fashion/dallas-blue-gown.jpg", alt: "Blue Gown Editorial", category: ["Fashion"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/fashion/dallas-pearl-piano.jpg", alt: "Pearl Body Jewelry — Piano", category: ["Fashion"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/fashion/mariel-cowboy-hat.jpg", alt: "Western Fashion Editorial", category: ["Fashion"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/fashion/leather-jumpsuit.jpg", alt: "Leather Jumpsuit Editorial", category: ["Fashion"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/fashion/dc-pink-chair.jpg", alt: "DreamCatchers Fashion Campaign", category: ["Fashion", "Hair"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/fashion/dc-pink-chair.jpg", alt: "DreamCatchers Fashion Campaign", category: ["Fashion"], aspect: "portrait" },
 
-  // Product — Curated top picks
+  // Product
   { src: "/nelson-taylor-portfolio/images/product/myx-hero.jpg", alt: "MYX Foundation — Hero", category: ["Product"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/product/oribe-water.jpg", alt: "Oribe Superfine — Luxury Product", category: ["Product"], aspect: "portrait" },
   { src: "/nelson-taylor-portfolio/images/product/jordan-iv.jpg", alt: "Jordan IV — Fly Zone", category: ["Product"], aspect: "landscape" },
   { src: "/nelson-taylor-portfolio/images/product/takis-fuego.jpg", alt: "Takis Fuego — Brand Campaign", category: ["Product"], aspect: "landscape" },
   { src: "/nelson-taylor-portfolio/images/product/nitro-pepsi.jpg", alt: "Nitro Pepsi", category: ["Product"], aspect: "square" },
   { src: "/nelson-taylor-portfolio/images/product/oribe-cracked-earth.jpg", alt: "Oribe — Botanical Concept", category: ["Product"], aspect: "square" },
-  { src: "/nelson-taylor-portfolio/images/product/skinbetter-lifestyle.jpg", alt: "Skinbetter Science Campaign", category: ["Product", "Beauty"], aspect: "portrait" },
-
-  // Hair — Curated top picks
-  { src: "/nelson-taylor-portfolio/images/hair/toni-guy-curls.jpg", alt: "TONI&GUY — Curls Editorial", category: ["Hair", "Beauty"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/hair/juice-botanics-canoe.jpg", alt: "Juices & Botanics — Campaign", category: ["Hair"], aspect: "landscape" },
-  { src: "/nelson-taylor-portfolio/images/hair/hairlocs-copper.jpg", alt: "HairLocs — Copper Red", category: ["Hair"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/hair/dc-pink-chair-new.jpg", alt: "DreamCatchers Campaign", category: ["Hair", "Fashion"], aspect: "portrait" },
-  { src: "/nelson-taylor-portfolio/images/hair/toni-guy-branded.jpg", alt: "TONI&GUY — Brand Campaign", category: ["Hair"], aspect: "landscape" },
-
-  // Events
-  { src: "/nelson-taylor-portfolio/images/events/toni-event-1.jpg", alt: "TONI&GUY Event", category: ["Events"], aspect: "landscape" },
-  { src: "/nelson-taylor-portfolio/images/events/event-1.jpg", alt: "Live Event Photography", category: ["Events"], aspect: "landscape" },
-  { src: "/nelson-taylor-portfolio/images/events/kids-fashion.jpg", alt: "Kids Fashion Show", category: ["Events", "Fashion"], aspect: "portrait" },
+  { src: "/nelson-taylor-portfolio/images/product/skinbetter-lifestyle.jpg", alt: "Skinbetter Science Campaign", category: ["Product"], aspect: "portrait" },
 ];
 
-const categories: Category[] = ["All", "Beauty", "Fashion", "Product", "Hair", "Events"];
+const categories: Category[] = ["All", "Beauty", "Fashion", "Product"];
 
 export default function PhotographyPage() {
   const [active, setActive] = useState<Category>("All");
