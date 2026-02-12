@@ -70,7 +70,7 @@ const aiWork = [
     description: "AI-generated product visualization for beauty brand concept.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/color-match.png",
+    src: "/nelson-taylor-portfolio/images/ai/color-match.jpg",
     alt: "Color Match Concept",
     category: "Brand Design",
     description: "AI-assisted color matching and brand visualization concept.",
@@ -177,7 +177,7 @@ export default function AIContentPage() {
             { title: "59 Shades Campaign", type: "Animated GIF Ad", src: "/nelson-taylor-portfolio/images/ai/59-shades-ad.gif" },
             { title: "Skeleton Dance", type: "AI Motion Graphics", src: "/nelson-taylor-portfolio/images/ai/skeleton-dance.gif" },
             { title: "Hands Petting", type: "AI Visual Effects", src: "/nelson-taylor-portfolio/images/ai/hands-petting.gif" },
-            { title: "Halloween Social Post", type: "AI Animation", src: "/nelson-taylor-portfolio/images/ai/halloween-post.png" },
+            { title: "Halloween Social Post", type: "AI Animation", src: "/nelson-taylor-portfolio/images/ai/halloween-post.jpg" },
           ].map((item) => (
             <StaggerItem key={item.title}>
               <div className="group">

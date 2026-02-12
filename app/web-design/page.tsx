@@ -185,23 +185,50 @@ export default function WebDesignPage() {
               num: "01",
               title: "Discover & Strategy",
               desc: "Understanding your brand, audience, and goals. Research-driven approach to establish a clear creative direction.",
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              ),
             },
             {
               num: "02",
               title: "Design & Prototype",
               desc: "Wireframes to high-fidelity mockups in Figma. Interactive prototypes that let you experience the vision before development.",
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                  <path d="M2 2l7.586 7.586" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+              ),
             },
             {
               num: "03",
               title: "Build & Launch",
               desc: "Clean, performant code. Responsive across all devices. Optimized for conversions and search engines.",
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                </svg>
+              ),
             },
           ].map((step) => (
             <StaggerItem key={step.num}>
               <div className="glass-card p-8 group hover:border-gold/20 transition-colors duration-500">
-                <span className="font-display text-4xl font-black text-gold/10 group-hover:text-gold/30 transition-colors duration-300 block mb-4">
-                  {step.num}
-                </span>
+                <div className="flex items-center justify-between mb-6">
+                  <span className="font-display text-4xl font-black text-gold/10 group-hover:text-gold/30 transition-colors duration-300">
+                    {step.num}
+                  </span>
+                  <div className="text-gold/30 group-hover:text-gold transition-colors duration-300">
+                    {step.icon}
+                  </div>
+                </div>
                 <h3 className="font-display font-bold text-xl text-cream mb-3">
                   {step.title}
                 </h3>
