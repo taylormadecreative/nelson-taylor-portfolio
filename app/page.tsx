@@ -17,37 +17,37 @@ const featuredWork = [
   {
     title: "MYX Foundation",
     category: "Product Photography",
-    image: "/nelson-taylor-portfolio/images/product/brands/myx/myx%201.jpg",
+    image: "/images/product/brands/myx/myx%201.jpg",
     href: "/photography",
   },
   {
     title: "Takis Fuego",
     category: "Brand Campaign",
-    image: "/nelson-taylor-portfolio/images/product/brands/takis/takis%20graphic.jpg",
+    image: "/images/product/brands/takis/takis%20graphic.jpg",
     href: "/photography",
   },
   {
     title: "TONI&GUY Editorial",
     category: "Fashion Photography",
-    image: "/nelson-taylor-portfolio/images/hero/toni-guy-editorial.jpg",
+    image: "/images/hero/toni-guy-editorial.jpg",
     href: "/photography",
   },
   {
     title: "Jordan x Foot Locker",
     category: "Product & Branding",
-    image: "/nelson-taylor-portfolio/images/product/brands/jordan/jordanIV_1.jpg",
+    image: "/images/product/brands/jordan/jordanIV_1.jpg",
     href: "/photography",
   },
   {
     title: "Konjo Beauty",
     category: "Product Photography",
-    image: "/nelson-taylor-portfolio/images/product/brands/konjo/Konjo8937.jpg",
+    image: "/images/product/brands/konjo/Konjo8937.jpg",
     href: "/photography",
   },
   {
     title: "AI Fashion Editorial",
     category: "AI-Generated Content",
-    image: "/nelson-taylor-portfolio/images/ai/vintage-car-editorial.png",
+    image: "/images/ai/vintage-car-editorial.png",
     href: "/ai-content",
   },
 ];
@@ -339,7 +339,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
-                  src="/nelson-taylor-portfolio/images/hero/nelson-headshot.png"
+                  src="/images/hero/nelson-headshot.png"
                   alt="Nelson Taylor"
                   fill
                   className="object-cover"

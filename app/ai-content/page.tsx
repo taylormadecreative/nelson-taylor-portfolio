@@ -10,67 +10,67 @@ import {
 
 const aiWork = [
   {
-    src: "/nelson-taylor-portfolio/images/ai/vintage-car-editorial.png",
+    src: "/images/ai/vintage-car-editorial.png",
     alt: "Vintage Car Editorial",
     category: "Fashion / Lifestyle",
     description: "AI-generated men's fashion editorial with vintage luxury car. Crafted with precise art direction for realistic campaign-quality output.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/bmw-editorial.png",
+    src: "/images/ai/bmw-editorial.png",
     alt: "BMW Editorial",
     category: "Fashion / Automotive",
     description: "AI-generated lifestyle editorial blending fashion and automotive aesthetics.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/lip-macro.png",
+    src: "/images/ai/lip-macro.png",
     alt: "Lip Macro Beauty",
     category: "Beauty",
     description: "Hyper-realistic AI beauty shot. Extreme macro lip photography with product-ready detail and lighting.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/ai-beauty-1.png",
+    src: "/images/ai/ai-beauty-1.png",
     alt: "AI Beauty Portrait",
     category: "Beauty",
     description: "AI-generated beauty portrait showcasing advanced prompt engineering and art direction skills.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/ai-beauty-2.png",
+    src: "/images/ai/ai-beauty-2.png",
     alt: "AI Beauty Editorial",
     category: "Beauty / Editorial",
     description: "Beauty editorial created entirely with AI, demonstrating the intersection of technology and creative vision.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/ai-fashion-1.png",
+    src: "/images/ai/ai-fashion-1.png",
     alt: "AI Fashion",
     category: "Fashion",
     description: "Fashion-forward AI-generated imagery pushing creative boundaries.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/ai-fashion-2.png",
+    src: "/images/ai/ai-fashion-2.png",
     alt: "AI Fashion Editorial",
     category: "Fashion",
     description: "High-fashion AI editorial with meticulous attention to styling, lighting, and composition.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/ai-lifestyle-1.png",
+    src: "/images/ai/ai-lifestyle-1.png",
     alt: "AI Lifestyle",
     category: "Lifestyle",
     description: "AI-generated lifestyle content for brand campaigns and social media.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/jaquandice-album.png",
+    src: "/images/ai/jaquandice-album.png",
     alt: "JaQuandice Album Art",
     category: "Music / Branding",
     description: "AI-assisted album artwork design for recording artist JaQuandice.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/pattern-beauty.png",
+    src: "/images/ai/pattern-beauty.png",
     alt: "Pattern Beauty",
     category: "Product / Beauty",
     description: "AI-generated product visualization for beauty brand concept.",
   },
   {
-    src: "/nelson-taylor-portfolio/images/ai/color-match.jpg",
+    src: "/images/ai/color-match.jpg",
     alt: "Color Match Concept",
     category: "Brand Design",
     description: "AI-assisted color matching and brand visualization concept.",
@@ -174,10 +174,10 @@ export default function AIContentPage() {
         {/* GIFs */}
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { title: "59 Shades Campaign", type: "Animated GIF Ad", src: "/nelson-taylor-portfolio/images/ai/59-shades-ad.gif" },
-            { title: "Skeleton Dance", type: "AI Motion Graphics", src: "/nelson-taylor-portfolio/images/ai/skeleton-dance.gif" },
-            { title: "Hands Petting", type: "AI Visual Effects", src: "/nelson-taylor-portfolio/images/ai/hands-petting.gif" },
-            { title: "Halloween Social Post", type: "AI Animation", src: "/nelson-taylor-portfolio/images/ai/halloween-post.jpg" },
+            { title: "59 Shades Campaign", type: "Animated GIF Ad", src: "/images/ai/59-shades-ad.gif" },
+            { title: "Skeleton Dance", type: "AI Motion Graphics", src: "/images/ai/skeleton-dance.gif" },
+            { title: "Hands Petting", type: "AI Visual Effects", src: "/images/ai/hands-petting.gif" },
+            { title: "Halloween Social Post", type: "AI Animation", src: "/images/ai/halloween-post.jpg" },
           ].map((item) => (
             <StaggerItem key={item.title}>
               <div className="group">

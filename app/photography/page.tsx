@@ -18,7 +18,7 @@ interface Project {
   images: string[];
 }
 
-const IMG = "/nelson-taylor-portfolio/images";
+const IMG = "/images";
 
 const TG = `${IMG}/hair/brands/Toni%20%26%20Guy`;
 const DC = `${IMG}/hair/brands/DreamCatchers`;

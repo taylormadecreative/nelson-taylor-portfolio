@@ -34,7 +34,7 @@ export default function RootLayout({
           content="Creative Director with 10+ years crafting visual experiences across photography, video, design, and digital marketing. Let's make something unforgettable."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/nelson-taylor-portfolio/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-bg text-cream antialiased">
         <div className="grain-overlay" />
