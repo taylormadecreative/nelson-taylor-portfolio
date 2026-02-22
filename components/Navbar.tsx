@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/photography", label: "Photography" },
   { href: "/ai-content", label: "AI Content" },
   { href: "/about", label: "About" },
+  { href: "/consultation", label: "Consultation" },
 ];
 
 export default function Navbar() {
@@ -64,12 +65,12 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="mailto:taylormademd@gmail.com"
+            <Link
+              href="/consultation"
               className="ml-4 px-6 py-2.5 border border-gold/40 text-gold font-display text-xs uppercase tracking-[0.2em] hover:bg-gold hover:text-bg transition-all duration-300"
             >
               Let&apos;s Talk
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -125,16 +126,19 @@ export default function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              <motion.a
-                href="mailto:taylormademd@gmail.com"
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ delay: navLinks.length * 0.08, duration: 0.5 }}
-                className="mt-4 px-8 py-3 border border-gold/40 text-gold font-display text-sm uppercase tracking-[0.2em] hover:bg-gold hover:text-bg transition-all duration-300"
               >
-                Let&apos;s Talk
-              </motion.a>
+                <Link
+                  href="/consultation"
+                  className="mt-4 inline-block px-8 py-3 border border-gold/40 text-gold font-display text-sm uppercase tracking-[0.2em] hover:bg-gold hover:text-bg transition-all duration-300"
+                >
+                  Let&apos;s Talk
+                </Link>
+              </motion.div>
             </nav>
           </motion.div>
         )}
